@@ -31,6 +31,8 @@ Before you begin, ensure you have met the following requirements:
 
 ## Getting Started
 
+
+
 ## Configuration
 
 To configure this project, follow these steps:
@@ -44,6 +46,11 @@ To configure this project, follow these steps:
    JWT_SECREAT_KEY=your_secret_key
    MONGODB_URI=your_mongodb_connection_uri
 
+## API Documentation
+
+For detailed API documentation, please refer to our [API Documentation](https://documenter.getpostman.com/view/27359000/2s9YC8uVh1).
+
+The documentation provides comprehensive information about the available endpoints, request/response formats, and includes usage examples.
 
 ### Installation
 
@@ -51,5 +58,10 @@ To configure this project, follow these steps:
 
    ```bash
    git clone https://github.com/your-username/your-project.git
+
+  
+
+
+
 
  
