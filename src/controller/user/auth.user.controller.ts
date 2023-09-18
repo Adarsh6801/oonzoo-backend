@@ -63,7 +63,6 @@ export const login: RequestHandler = async (req, res) => {
       .status(200)
       .send({ status: false, message: "no user found with this email" });
   }
-        
     } catch (error) {
         res.status(500);
 
