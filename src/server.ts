@@ -19,10 +19,9 @@ app.use(
 // ===========================================Routes===================================
 app.use('/user',userRouter)
 
-
-
 // MongoDB Connect
 dbConnect()
+
 // =======================================Server=====================================
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running in the port ${process.env.PORT}`);
