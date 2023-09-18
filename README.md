@@ -31,9 +31,25 @@ Before you begin, ensure you have met the following requirements:
 
 ## Getting Started
 
+## Configuration
+
+To configure this project, follow these steps:
+
+1. Create a `.env` file in the root directory of your project.
+
+2. Add the following environment variables to `.env` and customize them as needed:
+
+   ```env
+   PORT=yout_port
+   JWT_SECREAT_KEY=your_secret_key
+   MONGODB_URI=your_mongodb_connection_uri
+
+
 ### Installation
 
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/your-username/your-project.git
+
+ 
