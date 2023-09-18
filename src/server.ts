@@ -5,7 +5,7 @@ import dotenv from "dotenv"
 dotenv.config({path:"../.env"})
 const app=express()
 import userRouter from "./routes/user.route"
-
+import { dbConnect } from "./config/database.config"
 
 // =======================================Middlewares=====================================
 
@@ -20,6 +20,9 @@ app.use(
 app.use('/user',userRouter)
 
 
+
+// MongoDB Connect
+dbConnect()
 // =======================================Server=====================================
 app.listen(process.env.PORT,()=>{
     console.log(`Server is running in the port ${process.env.PORT}`);
