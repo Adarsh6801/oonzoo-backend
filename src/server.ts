@@ -5,6 +5,7 @@ import dotenv from "dotenv"
 dotenv.config({path:"../.env"})
 const app=express()
 import userRouter from "./routes/user.route"
+import productRouter from "./routes/product.route"
 import { dbConnect } from "./config/database.config"
 
 // =======================================Middlewares=====================================
@@ -18,6 +19,7 @@ app.use(
 
 // ===========================================Routes===================================
 app.use('/user',userRouter)
+app.use('/product',productRouter)
 
 // MongoDB Connect
 dbConnect()
