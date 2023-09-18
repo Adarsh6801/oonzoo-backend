@@ -1,0 +1,27 @@
+import express from "express"
+import bodyParser from "body-parser"
+import logger from "morgan"
+import dotenv from "dotenv"
+dotenv.config({path:"../.env"})
+const app=express()
+import userRouter from "./routes/user.route"
+
+
+// =======================================Middlewares=====================================
+
+app.use(bodyParser.json())
+app.use(
+    express.urlencoded({ limit: "50mb", extended: true, parameterLimit: 50000 })
+  );
+  app.use(logger("dev"));
+  app.use(express.json({ limit: "50mb" }));
+
+// ===========================================Routes===================================
+app.use('/user',userRouter)
+
+
+// =======================================Server=====================================
+app.listen(8000,()=>{
+    console.log("server is running ");
+    
+})
