@@ -21,7 +21,7 @@ app.use('/user',userRouter)
 
 
 // =======================================Server=====================================
-app.listen(8000,()=>{
-    console.log("server is running ");
+app.listen(process.env.PORT,()=>{
+    console.log(`Server is running in the port ${process.env.PORT}`);
     
 })
